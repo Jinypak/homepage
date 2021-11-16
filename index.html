@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Momentum App</title>
+    </head>
+    <body>
+        <div class="app">
+            <a href="test://"><img src="images/kakao.png" alt="">
+                카카오톡
+            </a>
+        </div>
+        <h2 id="clock"></h2>
+        <form class="hidden" id="login-form">
+            <input
+                maxlength="15"
+                type="text"
+                placeholder="이름을 입력해주세요"
+            />
+            <button>Hello</button>
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+        <!-- Search Google -->
+        <form
+            id="google-search"
+            method="get"
+            action="http://www.google.co.kr/search"
+            target="_blank"
+        >
+            <input
+                type="text"
+                name="q"
+                size="25"
+                maxlength="255"
+                value="Google is God!"
+            />
+            <!-- 구글 검색 입력 창 -->
+            <input type="submit" name="btnG" value="O" />
+            <!-- 검색 버튼 -->
+        </form>
+        <!-- Search Google -->
+
+        <form action="" id="todo-form">
+            <input required type="text" value="오늘의 할 일" />
+        </form>
+        <ul id="todo-list">
+            <img src="images/menubar.png" alt="">
+        </ul>
+        <div id="weather">
+            <span></span>
+            <span></span>
+        </div>
+
+        <div id="quote">
+            <span></span>
+            <p>-</p>
+            <span></span>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+        <script src="js/greetings.js"></script>
+        <script src="js/clock.js"></script>
+        <script src="js/quotes.js"></script>
+        <script src="js/background.js"></script>
+        <script src="js/todo.js"></script>
+        <script src="js/weather.js"></script>
+    </body>
+</html>
